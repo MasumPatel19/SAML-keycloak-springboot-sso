@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyCloak Spring Security SAML</title>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <style>
+            body {
+                background: #43cea2;
+                background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
+                background: linear-gradient(to right, #185a9d, #43cea2);
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+            }
+
+            h4 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .badge {
+                background-color: #0f3861b0;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 4px;
+            }
+
+            .button {
+                display: inline-block;
+                margin-top: 20px;
+                padding: 15px 30px;
+                font-size: 18px;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                background-color: #0f3861b0;
+                border: 2px solid #013264;
+                border-radius: 4px;
+                transition: background-color 0.3s, color 0.3s;
+                width : 180px;
+            }
+
+            button:hover {
+                background-color: #013264;
+                color: #fff;
+            }
+
+            .custom-message {
+                font-size: 16px;
+                margin-top: 20px;
+            }
+
+    </style>
+</head>
+<body>
+<h4>KeyCloak Spring Security SAML</h4>
+<h3><strong>SAML 2.0 authentication!</strong><br/>You are successfully logged in!</h3>
+<p class="custom-message"><strong>You are logged as <span class="badge badge-dark"
+                                                          th:text="${username}">null</span>.</strong></p>
+
+<button type="button" th:onclick="logoutAndReload()" class="button">Global Logout</button>
+<br>
+<button th:href="@{/saml/logout?local=true}" class="button">Local Logout</button>
+
+<script>
+        function logoutAndReload() {
+
+          window.location.href = location.href + '/saml/logout';
+
+        }
+
+</script>
+
+</body>
+</html>
