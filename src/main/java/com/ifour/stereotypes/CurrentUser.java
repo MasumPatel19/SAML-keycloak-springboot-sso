@@ -1,4 +1,4 @@
-package com.henry.stereotypes;
+package com.ifour.stereotypes;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;

@@ -1,8 +1,8 @@
-package com.henry.authentication;
+package com.ifour.authentication;
 
 import java.security.Principal;
 
-import com.henry.stereotypes.CurrentUser;
+import com.ifour.stereotypes.CurrentUser;
 import org.springframework.core.MethodParameter;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.User;

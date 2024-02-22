@@ -1,6 +1,6 @@
-package com.henry.config;
+package com.ifour.config;
 
-import com.henry.authentication.SAMLUserDetailsServiceImpl;
+import com.ifour.authentication.SAMLUserDetailsServiceImpl;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.MultiThreadedHttpConnectionManager;
 import org.apache.velocity.app.VelocityEngine;

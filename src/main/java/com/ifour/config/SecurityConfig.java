@@ -1,6 +1,6 @@
-package com.henry.config;
+package com.ifour.config;
 
-import com.henry.authentication.SAMLUserDetailsServiceImpl;
+import com.ifour.authentication.SAMLUserDetailsServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

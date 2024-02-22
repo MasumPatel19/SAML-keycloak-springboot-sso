@@ -11,8 +11,7 @@ mvn spring-boot:run
 # Step 3: Go to:
 http://localhost:8081/
 
-user: **admin**
-password: **admin**
+
 
 # Detailed description and steps for run project found here: 
 https://jarmx.blogspot.com/2022/09/single-sign-on-with-saml-20-spring-boot.html
